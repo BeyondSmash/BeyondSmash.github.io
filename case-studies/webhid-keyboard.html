@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebuilding a Keyboard Config Tool — Sebastian Hadden</title>
+  <meta name="description" content="UX case study: auditing Epomaker's official keyboard software and building a better browser-based WebHID configuration tool.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2242%22 fill=%22%234fd8c4%22/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="wordmark" href="../index.html">SH<span class="accent-text">.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="../index.html#case-studies">Case Studies</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="case-hero">
+    <a class="back-link" href="../index.html#case-studies">← All case studies</a>
+    <p class="kicker">Case Study · Hardware UX</p>
+    <h1>Rebuilding a Keyboard Config Tool</h1>
+    <p class="summary">Epomaker's official software made simple tasks slow and advanced tasks impossible. I audited it, mapped where users got stuck, and built a browser-based WebHID tool that removed the install, the friction, and the guesswork.</p>
+    <figure class="reveal reveal--left">
+      <div class="placeholder-fig" role="img" aria-label="Placeholder for tool hero screenshot">PLACEHOLDER — hero screenshot: your WebHID tool UI</div>
+    </figure>
+  </div>
+
+  <dl class="case-meta">
+    <div><dt>Role</dt><dd>UX design, research, engineering</dd></div>
+    <div><dt>Timeline</dt><dd>PLACEHOLDER — e.g. 2025, 3 months</dd></div>
+    <div><dt>Tools</dt><dd>WebHID API, JavaScript, Figma</dd></div>
+    <div><dt>Type</dt><dd>Personal project · shipped</dd></div>
+  </dl>
+
+  <div class="case-body">
+
+    <section class="section" aria-labelledby="problem-title">
+      <div class="section-head reveal reveal--left">
+        <span class="section-index">01 — Problem</span>
+        <h2 id="problem-title">The official tool worked against its users</h2>
+      </div>
+      <div class="prose reveal reveal--right">
+        <p>PLACEHOLDER — Describe the starting point: what you were trying to do with your Epomaker keyboard, where the official software failed you, and why that mattered enough to build an alternative. Concrete moments beat generalities ("remapping one key took N clicks and a restart").</p>
+        <p>PLACEHOLDER — Who else has this problem? Forum threads, reviews, or community complaints make great evidence.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="research-title">
+      <div class="section-head reveal reveal--left">
+        <span class="section-index">02 — Research</span>
+        <h2 id="research-title">Auditing the official software</h2>
+      </div>
+      <div class="prose reveal reveal--right">
+        <p>PLACEHOLDER — How you audited: task walkthroughs, click counts, error states, install/update flow. What patterns emerged.</p>
+      </div>
+      <div class="table-wrap reveal reveal--left">
+        <table class="comparison-table">
+          <caption class="muted" style="text-align:left; padding-bottom:0.8rem;">Feature comparison — Epomaker official software vs. my WebHID tool</caption>
+          <thead>
+            <tr>
+              <th scope="col">Capability</th>
+              <th scope="col">Epomaker official</th>
+              <th scope="col">My WebHID tool</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Installation required</td>
+              <td class="no">Yes — desktop install (PLACEHOLDER — verify)</td>
+              <td class="yes">No — runs in the browser</td>
+            </tr>
+            <tr>
+              <td>Per-key RGB configuration</td>
+              <td>PLACEHOLDER — verify</td>
+              <td class="yes">PLACEHOLDER — describe yours</td>
+            </tr>
+            <tr>
+              <td>Key remapping</td>
+              <td>PLACEHOLDER — verify</td>
+              <td class="yes">PLACEHOLDER — describe yours</td>
+            </tr>
+            <tr>
+              <td>Macro editor</td>
+              <td>PLACEHOLDER — verify</td>
+              <td>PLACEHOLDER — describe yours</td>
+            </tr>
+            <tr>
+              <td>Firmware update flow</td>
+              <td>PLACEHOLDER — verify</td>
+              <td>PLACEHOLDER — describe yours</td>
+            </tr>
+            <tr>
+              <td>Cross-platform</td>
+              <td class="no">PLACEHOLDER — verify</td>
+              <td class="yes">Any OS with a WebHID-capable browser</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="decisions-title">
+      <div class="section-head reveal reveal--left">
+        <span class="section-index">03 — Design Decisions</span>
+        <h2 id="decisions-title">Designing the better path</h2>
+      </div>
+      <div class="prose reveal reveal--right">
+        <p>PLACEHOLDER — Walk through 2–4 key decisions. For each: the option space, what you chose, and why. E.g. "Live preview on the physical keyboard while hovering a color — because feedback latency was the #1 frustration in the official tool."</p>
+      </div>
+      <figure class="reveal reveal--left">
+        <div class="placeholder-fig" role="img" aria-label="Placeholder for before/after comparison">PLACEHOLDER — before/after: official tool flow vs. yours</div>
+        <figcaption>PLACEHOLDER — caption explaining the improvement shown.</figcaption>
+      </figure>
+      <figure class="reveal reveal--right">
+        <div class="placeholder-fig" role="img" aria-label="Placeholder for interaction detail">PLACEHOLDER — interaction detail (GIF/video of a key flow)</div>
+        <figcaption>PLACEHOLDER — caption.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="outcome-title">
+      <div class="section-head reveal reveal--left">
+        <span class="section-index">04 — Outcome</span>
+        <h2 id="outcome-title">What shipped, and what it proved</h2>
+      </div>
+      <div class="prose reveal reveal--right">
+        <p>PLACEHOLDER — The result: what the tool does today, measurable improvements (steps removed, time saved, features the official tool still lacks), and links to the diffs/writeup. Close with what you'd do next.</p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="#">Try the tool (PLACEHOLDER link)</a>
+          <a class="btn btn--ghost" href="../case-studies/molecular-maelstrom.html">Next case study →</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div class="footer-links">
+      <a href="mailto:seba.hadden@gmail.com">Email</a>
+      <a href="https://www.artstation.com/PLACEHOLDER" rel="noopener" target="_blank">ArtStation</a>
+    </div>
+    <p class="fine">© 2026 Sebastian Hadden</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
