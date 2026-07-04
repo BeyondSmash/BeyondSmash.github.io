@@ -6,7 +6,9 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(e.target);
     }
   }
-}, { threshold: 0.15 });
+// Huge top rootMargin: content jumped past (anchor links, scroll restore)
+// counts as intersecting, so it never gets stuck invisible above the viewport.
+}, { threshold: 0.15, rootMargin: '9999px 0px 0px 0px' });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 

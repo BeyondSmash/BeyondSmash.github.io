@@ -26,6 +26,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: clip; /* .reveal--right offsets elements past the right edge pre-reveal */
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
