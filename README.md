@@ -1,4 +1,4 @@
-# Sebastian Hadden — Portfolio
+# Portfolio
 
 Static portfolio site (plain HTML/CSS/JS, no build step). Dark theme, scroll-reveal sections, two featured UX case studies plus a work gallery.
 
